@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modelo Fitness</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO MODERNO -->
+  <header class="hero-fitness">
+    <div class="hero-texto">
+      <h1>Transforme seu corpo</h1>
+      <h2>com treinos personalizados</h2>
+      <p>Alcance sua melhor versão com orientação profissional, nutrição leve e foco em resultados reais.</p>
+      <div class="hero-contato">
+        <a href="https://wa.me/5599999999999" class="btn-contato" target="_blank">💬 Agende pelo WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-imagem">
+      <img src="imagens/01.jpg" alt="Treinadora fitness">
+    </div>
+  </header>
+
+  <!-- SOBRE MIM -->
+  <section class="sobre">
+    <div class="texto">
+      <h2>Quem sou eu</h2>
+      <p>Sou uma personal trainer com anos de experiência ajudando pessoas a encontrarem sua melhor versão através de treinos inteligentes e acompanhamento humanizado.</p>
+    </div>
+    <div class="foto">
+      <img src="imagens/juliana.jpg" alt="Personal Trainer">
+    </div>
+  </section>
+
+  <!-- CALCULADORA IMC -->
+  <section class="imc" id="imc">
+    <h2>Descubra seu IMC</h2>
+    <p>Entenda melhor o seu corpo e dê o primeiro passo rumo à mudança.</p>
+    <div class="formulario">
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" placeholder="Ex: 70">
+      <label for="altura">Altura (cm):</label>
+      <input type="number" id="altura" placeholder="Ex: 165">
+      <button onclick="calcularIMC()">Calcular IMC</button>
+      <div id="resultado"></div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos">
+    <h2>Como posso te ajudar?</h2>
+    <div class="cards">
+      <a href="formulario.html">
+        <div class="card">
+          <h3>Treino Online</h3>
+          <p>Aulas ao vivo ou gravadas, com orientação e acompanhamento remoto.</p>
+        </div>
+      </a>
+      <a href="formulario.html">
+        <div class="card">
+          <h3>Treino Presencial</h3>
+          <p>Atendimento personalizado em academias ou ao ar livre.</p>
+        </div>
+      </a>
+      <a href="formulario.html">
+        <div class="card">
+          <h3>Plano Semanal</h3>
+          <p>Organização de treinos e tarefas pra sua rotina funcionar!</p>
+        </div>
+      </a>
+      <a href="formulario.html">
+        <div class="card">
+          <h3>Nutrição Leve</h3>
+          <p>Dicas práticas para melhorar sua alimentação no dia a dia.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- AGENDE -->
+  <section class="agendamento">
+    <h2>Pronta para mudar?</h2>
+    <p>Entre em contato e marque sua avaliação gratuita!</p>
+    <a href="https://wa.me/5599999999999?text=Olá%2C%20gostaria%20de%20marcar%20uma%20avaliação" target="_blank">
+      💬 Agendar pelo WhatsApp
+    </a>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>&copy; 2025 Modelo Fitness • Seu corpo, sua conquista.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

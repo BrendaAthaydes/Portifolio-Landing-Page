@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moraes & Machado - Advogados Associados</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container">
+      <h1>Moraes & Machado</h1>
+      <nav>
+        <a href="#atuacao">Atuação</a>
+        <a href="#faq">FAQ</a>
+        <a href="#agendamento">Agendar</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#localizacao">Localização</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>Defendendo seus direitos com seriedade e ética</h2>
+      <p>Especialistas em Direito da Família, Trabalhista e Cível.</p>
+    </div>
+  </section>
+
+  <!-- Transição Suave -->
+  <div class="transicao-suave"></div>
+
+  <!-- Sobre nós - Carrossel com Setas -->
+  <section class="sobre" id="sobre">
+    <h3>Quem Somos</h3>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+
+      <div class="carousel-multi">
+        <div class="slide">
+          <img src="img/mariana.webp" alt="Dra. Mariana Souza">
+          <h4>Dra. Mariana Souza</h4>
+          <p>Especialista em Direito da Família. Atua com sensibilidade e técnica em processos de guarda e divórcios.</p>
+        </div>
+        <div class="slide">
+          <img src="img/lucas.webp" alt="Dr. Antônio Ribeiro">
+          <h4>Dr. Antônio Ribeiro</h4>
+          <p>Focado em Direito Trabalhista, com experiência em causas coletivas e negociações sindicais.</p>
+        </div>
+        <div class="slide">
+          <img src="img/camila.webp" alt="Dra. Camila Torres">
+          <h4>Dra. Camila Torres</h4>
+          <p>Especialista em mediação de conflitos e direito das sucessões. Equilíbrio entre empatia e firmeza.</p>
+        </div>
+        <div class="slide">
+          <img src="img/rafael.webp" alt="Dr. Rafael Martins">
+          <h4>Dr. Rafael Martins</h4>
+          <p>Atua com litígios cíveis e comerciais. Busca soluções rápidas e eficazes para empresas e pessoas físicas.</p>
+        </div>
+        <div class="slide">
+          <img src="img/helena.webp" alt="Dra. Helena Prado">
+          <h4>Dra. Helena Prado</h4>
+          <p>Responsável pelos atendimentos online. Experiência internacional em Direito Civil comparado.</p>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" aria-label="Próximo">&#10095;</button>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Áreas de Atuação -->
+  <section class="atuacao" id="atuacao">
+    <div class="container">
+      <h3>Áreas de Atuação</h3>
+
+      <div class="cards-atuacao">
+
+        <!-- Direito da Família -->
+        <div class="card-atuacao"
+            data-area="Direito da Família"
+            data-html='
+              <div class="especialista">
+                <img src="img/mariana.webp" alt="Dra. Mariana Souza">
+                <span>Dra. Mariana Souza</span>
+              </div>
+              <div class="especialista">
+                <img src="img/camila.webp" alt="Dra. Camila Torres">
+                <span>Dra. Camila Torres</span>
+              </div>'>
+          <button class="atuacao-btn">
+            <i class="fa-solid fa-people-roof"></i>
+            <h4>Direito da Família</h4>
+          </button>
+        </div>
+
+        <!-- Direito Trabalhista -->
+        <div class="card-atuacao"
+            data-area="Direito Trabalhista"
+            data-html='
+              <div class="especialista">
+                <img src="img/lucas.webp" alt="Dr. Lucas Ribeiro">
+                <span>Dr. Lucas Ribeiro</span>
+              </div>'>
+          <button class="atuacao-btn">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Direito Trabalhista</h4>
+          </button>
+        </div>
+
+        <!-- Direito Cível -->
+        <div class="card-atuacao"
+            data-area="Direito Cível"
+            data-html='
+              <div class="especialista">
+                <img src="img/rafael.webp" alt="Dr. Rafael Martins">
+                <span>Dr. Rafael Martins</span>
+              </div>'>
+          <button class="atuacao-btn">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h4>Direito Cível</h4>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de Especialistas -->
+  <div class="modal-atuacao" id="modalAtuacao">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fechar">&times;</button>
+      <h4 id="modalTitle"></h4>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+
+  <!-- Perguntas Frequentes -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h3>Perguntas Frequentes</h3>
+
+      <div class="faq-item">
+        <button class="faq-question">Quanto custa uma consulta?</button>
+        <div class="faq-answer">
+          <p>O valor é acessível. A primeira conversa para triagem é gratuita.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Vocês atendem online?</button>
+        <div class="faq-answer">
+          <p>Sim! Atendemos por videoconferência, com agendamento prévio.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Posso agendar diretamente pelo site?</button>
+        <div class="faq-answer">
+          <p>Sim, use o formulário abaixo e receberá confirmação por e-mail.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Quais documentos levar?</button>
+        <div class="faq-answer">
+          <p>Leve documentos pessoais e quaisquer papéis relacionados ao caso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agendamento -->
+  <section class="agendamento" id="agendamento">
+    <div class="container">
+      <h3>Agende uma Consulta</h3>
+      <form action="https://formsubmit.co/seuemail@email.com" method="POST"> <!-- Alterar e-mail aqui para onde vai enviar no formulário -->
+        <input type="text" name="nome" placeholder="Seu nome completo" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Descreva brevemente seu caso" required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://seudominio.com/obrigado.html">
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <h3>Onde Estamos</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=..."
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Moraes & Machado - Advogados Associados. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script do carrossel -->
+  <script src="carrossel.js"></script>
+  <script src="atuacao.js"></script>
+  <script src="FAQ.js"></script>
+</body>
+</html>

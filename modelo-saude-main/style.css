@@ -1,0 +1,277 @@
+:root {
+  --bg-primary: #12191f;
+  --bg-secondary: #1f2b32;
+  --card-bg: #26333d;
+  --accent: #d4a373;
+  --accent-hover: #e2bb94;
+  --text-main: #f2f2f2;
+  --text-muted: #a0aab3;
+  --radius: 16px;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+  --font: 'Segoe UI', sans-serif;
+  --max-width: 1200px;
+  --transition: all 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--accent-hover);
+}
+
+section {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+
+h2.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #12191f, #1f2b32);
+}
+
+.hero-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 1;
+}
+
+#heroCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+}
+
+.hero-icon {
+  margin: 3rem auto 2rem;
+  display: block;
+  width: 72px;
+  height: 72px;
+  color: var(--accent);
+  stroke-width: 1.8;
+}
+
+/* Botão */
+.btn {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--accent-hover);
+  color: var(--bg-secondary);
+}
+
+/* Cards genéricos */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.card {
+  background-color: var(--card-bg);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  flex: 0 1 calc(33.333% - 2rem);
+  max-width: calc(33.333% - 2rem);
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.3);
+}
+.card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+  color: var(--text-main);
+  font-weight: bold;
+}
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  stroke-width: 2;
+}
+
+/* Seções específicas */
+.especialidades {
+  background-color: var(--bg-secondary);
+}
+.especialidades .card {
+  background-color: #2e3e48;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+}
+.especialidades .card:hover {
+  background-color: #354954;
+}
+
+/* Outras seções */
+.beneficios,
+.estrutura {
+  background-color: var(--bg-secondary);
+}
+
+/* CTA Final */
+.cta-final {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  padding: 5rem 2rem;
+}
+.cta-final h2,
+.cta-final p {
+  color: var(--bg-primary);
+}
+.cta-final p {
+  margin-bottom: 2rem;
+}
+.cta-final .btn {
+  background-color: var(--bg-primary);
+  color: var(--accent);
+  font-weight: bold;
+}
+.cta-final .btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--accent-hover);
+}
+
+/* Footer */
+footer {
+  background-color: #0e1419;
+  color: var(--text-muted);
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  h2.section-title {
+    font-size: 2.2rem;
+  }
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+  .hero-icon {
+    width: 64px;
+    height: 64px;
+  }
+  .card {
+    flex: 0 1 calc(50% - 2rem);
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 4rem 1rem;
+  }
+  .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+  .card {
+    flex: 0 1 100%;
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+  }
+}

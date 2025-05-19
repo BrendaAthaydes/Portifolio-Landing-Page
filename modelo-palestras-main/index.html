@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspire & Transformar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar fixa no topo -->
+  <header class="navbar">
+    <div class="logo">Inspire & Transformar</div>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#palestrantes">Palestrantes</a>
+      <a href="#agenda">Eventos</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <a href="https://wa.me/55SEUNUMERO" class="whatsapp-fixo" target="_blank">
+        <img src="img/whatsapp-icon.png" alt="Fale conosco">
+      </a>      
+
+    <!-- Hero com imagem e frase de impacto -->
+    <section class="hero-banner">
+      <div class="hero-container">
+        <div class="hero-texto">
+          <h1>Seja a voz que transforma pessoas</h1>
+          <p>Conectamos palestrantes com propósito às melhores oportunidades do Brasil</p>
+          <a href="#cursos" class="btn-cta">Quero começar agora</a>
+        </div>
+        <div class="hero-img">
+          <img src="img/hero-palestrante.jpg" alt="Imagem de palestrante no palco">
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="servicos">
+      <h2>O que oferecemos</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Agenciamento de Palestras</h3>
+          <p>Conectamos você aos melhores eventos e empresas.</p>
+        </div>
+        <div class="card">
+          <h3>Criação de Marca Pessoal</h3>
+          <p>Fortaleça sua imagem com identidade visual, site e redes sociais.</p>
+        </div>
+        <div class="card">
+          <h3>Produção de Conteúdo</h3>
+          <p>Blog, vídeos e materiais para posicionar você como referência.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Palestrantes -->
+    <section id="palestrantes" class="palestrantes">
+      <h2>Nossos Palestrantes</h2>
+      <div class="cards-palestrantes">
+        <div class="card-palestrante">
+          <img src="img/palestrante1.jpg" alt="Camila Duarte">
+          <h3>Camila Duarte</h3>
+          <p>Comunicação & Empatia</p>
+        </div>
+        <div class="card-palestrante">
+          <img src="img/palestrante2.jpg" alt="Rafael Torres">
+          <h3>Rafael Torres</h3>
+          <p>Propósito & Inteligência Emocional</p>
+        </div>
+        <div class="card-palestrante">
+          <img src="img/palestrante3.jpg" alt="Ana Vitória">
+          <h3>Ana Vitória</h3>
+          <p>Mindset & Alta Performance</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Eventos com cards -->
+    <section id="agenda" class="agenda">
+      <h2>Próximos Eventos</h2>
+      <div class="eventos-container">
+        <div class="evento-card">
+          <h3>Comunicação Assertiva</h3>
+          <p><span>🗓️</span> 25/04 · <span>💰</span> R$ 120</p>
+          <a href="#" class="btn-inscricao">Inscrever-se</a>
+        </div>
+        <div class="evento-card">
+          <h3>Autoconhecimento Profundo</h3>
+          <p><span>🗓️</span> 10/05 · <span>💰</span> R$ 340</p>
+          <a href="#" class="btn-inscricao">Inscrever-se</a>
+        </div>
+        <div class="evento-card">
+          <h3>Carreira com Propósito</h3>
+          <p><span>🗓️</span> 01/06 · <span>💸</span> Gratuito</p>
+          <a href="#" class="btn-inscricao">Participar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Cursos Online com cards -->
+    <section id="cursos" class="cursos-online">
+      <h2>Cursos Online Disponíveis</h2>
+      <div class="cursos-container">
+        <div class="curso-card">
+          <h3>Autoliderança na Prática</h3>
+          <p>Curso online com certificado</p>
+          <span class="valor">R$ 89,90</span>
+          <a href="#" class="btn-inscricao">Saiba mais</a>
+        </div>
+        <div class="curso-card">
+          <h3>Palestrante Profissional</h3>
+          <p>Aulas gravadas + bônus</p>
+          <span class="valor">R$ 149,90</span>
+          <a href="#" class="btn-inscricao">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Chamada para Ação Final -->
+    <section class="cta-final">
+        <div class="cta-content">
+          <h2>Quer fazer parte da próxima geração de palestrantes?</h2>
+          <p class="cta-texto">Junte-se a centenas de profissionais que já transformaram suas carreiras com nossa ajuda.</p>
+          <a href="https://wa.me/55SEUNUMERO" class="btn-cta">Fale com nossa equipe no WhatsApp</a>
+        </div>
+      </section>      
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer" id="contato">
+    <p>&copy; 2025 Inspire & Transformar</p>
+    <a href="https://wa.me/55SEUNUMERO" target="_blank">Agende um atendimento</a>
+  </footer>
+
+  <!-- ScrollReveal para animações -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('section', {
+      duration: 900,
+      origin: 'bottom',
+      distance: '50px',
+      easing: 'ease-in-out',
+      reset: false
+    });
+  </script>
+</body>
+</html>

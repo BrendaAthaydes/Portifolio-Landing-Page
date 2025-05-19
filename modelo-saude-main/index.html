@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Vida Plena</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <svg class="hero-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <path fill="#48c9b0" fill-opacity="0.3"
+        d="M0,160L60,165.3C120,171,240,181,360,170.7C480,160,600,128,720,133.3C840,139,960,181,1080,186.7C1200,192,1320,160,1380,144L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <h1>Clínica Vida Plena</h1>
+      <p>Cuidado humano e integral com foco na sua saúde física e emocional.</p>
+      <a href="#agendamento" class="btn">Agendar Consulta</a>
+    </div>
+  </section>
+
+  <!-- Especialidades -->
+  <section class="especialidades">
+    <h2 class="section-title">Especialidades</h2>
+    <p class="section-subtitle">Atendimento multidisciplinar com foco na sua saúde física e emocional.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon" data-lucide="brain"></div>
+        <h3>Psicologia</h3>
+        <p>Apoio emocional, autoconhecimento e tratamento para ansiedade e depressão.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="heart-pulse"></div>
+        <h3>Cardiologia</h3>
+        <p>Prevenção, diagnóstico e reabilitação de doenças cardiovasculares.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="stethoscope"></div>
+        <h3>Clínica Geral</h3>
+        <p>Consultas preventivas, orientações e acompanhamento contínuo de saúde.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="baby"></div>
+        <h3>Pediatria</h3>
+        <p>Cuidado especializado para crianças, desde os primeiros dias de vida.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="apple"></div>
+        <h3>Nutrição</h3>
+        <p>Planos alimentares personalizados para saúde, bem-estar e desempenho.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="user-check"></div>
+        <h3>Geriatria</h3>
+        <p>Atendimento humanizado e focado na qualidade de vida do idoso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipe Médica -->
+  <section class="equipe">
+    <h2>Nossa Equipe</h2>
+    <p>Profissionais comprometidos com a excelência técnica e o cuidado humano.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon" data-lucide="user"></div>
+        <h3>Dr. João Almeida</h3>
+        <p>Clínico Geral<br>CRM-SP 123456<br>10 anos de experiência em medicina preventiva.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="user"></div>
+        <h3>Dra. Camila Torres</h3>
+        <p>Psicóloga<br>CRP 06/12345<br>Atendimento presencial e online para adultos.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="user"></div>
+        <h3>Dr. Rafael Lima</h3>
+        <p>Cardiologista<br>CRM-SP 654321<br>Especialista em prevenção e reabilitação cardíaca.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Estrutura -->
+  <section class="estrutura">
+    <h2>Estrutura e Atendimento</h2>
+    <p>Ambiente moderno, acolhedor e com tecnologia de ponta para sua segurança e conforto.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon" data-lucide="building"></div>
+        <h3>Ambiente Acolhedor</h3>
+        <p>Salas climatizadas, recepção confortável e privacidade em cada consulta.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="monitor"></div>
+        <h3>Telemedicina</h3>
+        <p>Atendimento online para maior comodidade sem perder a qualidade.</p>
+      </div>
+      <div class="card">
+        <div class="icon" data-lucide="clock"></div>
+        <h3>Horários Flexíveis</h3>
+        <p>Agendamentos durante a semana e aos sábados para se adequar à sua rotina.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-final" id="agendamento">
+    <h2>Agende sua consulta</h2>
+    <p>Entre em contato pelo WhatsApp e marque seu atendimento com facilidade.</p>
+    <a href="https://wa.me/SEUNUMERO" class="btn" target="_blank">Falar no WhatsApp</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Clínica Vida Plena. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+/* =============================
+   RESET & BASE GLOBAL
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* =============================
+     NAVBAR FIXA NO TOPO
+  ============================= */
+  .whatsapp-fixo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-fixo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #6a0572;
+  }
+  
+  .nav-links a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #6a0572;
+  }
+  
+  main {
+    padding-top: 80px; /* espaço para compensar a navbar fixa */
+  }
+  
+  /* =============================
+     TÍTULOS GLOBAIS (h2)
+  ============================= */
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #6a0572;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* =============================
+     SEÇÃO: HERO COM IMAGEM
+  ============================= */
+  .hero-banner {
+    background: linear-gradient(90deg, #fef6ff, #f0f4ff);
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-texto {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .hero-texto h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #6a0572;
+    margin-bottom: 20px;
+  }
+  
+  .hero-texto p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+  
+  .hero-img {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .hero-img {
+    background: linear-gradient(135deg, #6a0572, #3c91e6); /* gradiente vibrante */
+    padding: 6px; /* espaço da moldura */
+    border-radius: 18px; /* maior que a imagem */
+    display: inline-block;
+  }
+  
+  .hero-img img {
+    display: block;
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero-img img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  }
+  
+  
+  /* =============================
+     SEÇÕES ALTERNADAS DE FUNDO
+  ============================= */
+  section {
+    padding: 60px 20px;
+  }
+  
+  .servicos,
+  .cursos-online {
+    background-color: #fff;
+  }
+  
+  .temas,
+  .cta-final {
+    background-color: #fef6ff;
+  }
+  
+  .palestrantes {
+    background-color: #f0f4ff;
+  }
+  
+  .agenda {
+    background-color: #fff8f0;
+  }
+  
+  section + section {
+    border-top: 1px solid #e8e8e8; /* linha suave entre blocos */
+  }
+  
+  /* =============================
+     BOTÕES
+  ============================= */
+  .btn-cta {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-cta:hover {
+    background: #d94c4c;
+  }
+  
+  /* =============================
+     SERVIÇOS (cards)
+  ============================= */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #ffdee9;
+    border-left: 5px solid #ff6b6b;
+    border-radius: 14px;
+    padding: 30px;
+    width: 300px;
+    color: #4b0037;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* =============================
+     PALESTRANTES (cards com imagem)
+  ============================= */
+  .cards-palestrantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card-palestrante {
+    background: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card-palestrante img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  /* =============================
+     AGENDA DE EVENTOS
+  ============================= */
+  .lista-eventos {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .lista-eventos li {
+    margin: 10px 0;
+    color: #3c91e6;
+  }
+  
+  /* =============================
+     CURSOS ONLINE (cards)
+  ============================= */
+  .cards-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .curso {
+    background: #ffdee9;
+    padding: 20px;
+    border-left: 5px solid #ff6b6b;
+    color: #4b0037;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  }
+
+  /* =============================
+   EVENTOS - VISUAL COM CARDS
+============================= */
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .evento-card {
+    background: #fff;
+    border-left: 5px solid #3c91e6;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  
+  .evento-card h3 {
+    color: #6a0572;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .evento-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .btn-inscricao {
+    display: inline-block;
+    background: #ff6b6b;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-inscricao:hover {
+    background: #d94c4c;
+  }
+  
+  /* =============================
+     CURSOS - CARDS COM VALOR
+  ============================= */
+  .cursos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .curso-card {
+    background: #fff;
+    border-left: 5px solid #ff6b6b;
+    border-radius: 10px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+  }
+  
+  .curso-card h3 {
+    color: #4b0037;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .curso-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .curso-card .valor {
+    font-weight: bold;
+    color: #6a0572;
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  
+/* =============================
+   CHAMADA PARA AÇÃO FINAL
+============================= */
+.cta-final {
+    background: linear-gradient(rgba(106, 5, 114, 0.9), rgba(60, 145, 230, 0.85)), 
+                url('img/bg-cta.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .cta-final h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .cta-final .cta-texto {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #fdfdfd;
+  }
+  
+  
+  /* =============================
+     RODAPÉ
+  ============================= */
+  .footer {
+    background: #6a0572;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ffbe0b;
+    text-decoration: none;
+  }
+  
+  /* =============================
+     RESPONSIVIDADE
+  ============================= */
+  @media (max-width: 768px) {
+    .cards,
+    .cards-palestrantes {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cards-cursos {
+      flex-direction: column;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .card,
+    .card-palestrante,
+    .curso {
+      width: 90%;
+    }
+  
+    .btn-cta {
+      padding: 10px 20px;
+      font-size: 0.95rem;
+    }
+  }
+  
